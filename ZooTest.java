@@ -48,6 +48,8 @@ public class ZooTest{
     zoo.emptyEnclosure();
     assertEquals(0, zoo.animalCount());
   }
+
+ 
 }
 
 
