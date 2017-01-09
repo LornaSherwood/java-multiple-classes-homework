@@ -1,7 +1,7 @@
 import static org.junit.Assert.assertEquals;
 import org.junit.*;
 
-public class ZooTest{
+public class ZooTest {
   Zoo zoo;
   Animal animal;
 
@@ -17,7 +17,7 @@ public class ZooTest{
   }
 
   @Test
-  public void startsWithNoAnimals(){
+  public void startsWithNoAnimals() {
     assertEquals(0, zoo.animalCount());
   }
 
@@ -49,7 +49,6 @@ public class ZooTest{
     assertEquals(0, zoo.animalCount());
   }
 
- 
 }
 
 
