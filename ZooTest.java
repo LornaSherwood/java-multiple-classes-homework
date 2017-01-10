@@ -1,4 +1,4 @@
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 import org.junit.*;
 
 public class ZooTest {
@@ -26,21 +26,6 @@ public class ZooTest {
     zoo.addAnimals(animal);
     assertEquals(1, zoo.animalCount());
   }
-
-  @Test
-  public void reachesLimitAfter5Animals() {
-    for(int i = 0; i < 5; i++) {
-      zoo.addAnimals(animal);
-    }
-    assertEquals(true, zoo.enclosureIsFull());
-  }
-
-  /*@Test
-  public void canReachLimit() {
-    for(int i = 0; i < 10; i++)
-    zoo.addAnimals(animal);
-  assertEquals(5, zoo.animalCount());
-  }*/
 
   @Test
   public void canEmptyEnclosure() {

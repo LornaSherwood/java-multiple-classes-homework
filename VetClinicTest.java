@@ -24,15 +24,11 @@ public class VetClinicTest {
   }
 
   @Test
-  public void startsWithNoEnclosures() {
-    assertEquals(0, vetClinic.enclosureCount());
-  }
-
-  @Test
-  public void canAddAnimalAndEnclosure() {
-    vetClinic.treatAnimal(animal, zoo);
+  public void canAddAnimal() {
+    vetClinic.treatAnimal(animal);
     assertEquals(1, vetClinic.animalCount());
-    assertEquals(1, vetClinic.enclosureCount());
   }
 
 }
+
+
